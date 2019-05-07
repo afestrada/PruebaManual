@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>5. Archivo - Manual de operatividad de SINCO SGD</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="./css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "5. Archivo";
+    var mkdocs_page_input_path = "5. Archivo.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js" defer></script>
+  <script src="./js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Manual de operatividad de SINCO SGD</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="index.html">Manual de operatividad de SINCO SGD</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="1.CorrespondenciaEntrante.html">1. Correspondencia Entrante</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="2.ComunicadosInternos.html">2. Comunicados Internos</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="3.CorrespondenciaInterna.html/">3. Correspondencia Interna</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="4.CorrespondenciaSaliente.html">4. Correspondencia Saliente</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="5.Archivo.html">5. Archivo</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#archivo">ARCHIVO</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#configuraciones-previas">CONFIGURACIONES PREVIAS</a></li>
+        
+            <li><a class="toctree-l3" href="#politica-de-retencion-documental">POLÍTICA DE RETENCIÓN DOCUMENTAL</a></li>
+        
+            <li><a class="toctree-l3" href="#permisos-de-consulta-sobre-las-tablas-de-retencion">PERMISOS DE CONSULTA SOBRE LAS TABLAS DE RETENCIÓN</a></li>
+        
+            <li><a class="toctree-l3" href="#transacciones">TRANSACCIONES</a></li>
+        
+            <li><a class="toctree-l3" href="#informes-de-transacciones-de-archivo">INFORMES DE TRANSACCIONES DE ARCHIVO</a></li>
+        
+            <li><a class="toctree-l3" href="#informes-dinamicos">INFORMES DINÁMICOS</a></li>
+        
+            <li><a class="toctree-l3" href="#registro-de-expedientes-desde-sinco-cbr">REGISTRO DE EXPEDIENTES DESDE SINCO CBR</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Manual de operatividad de SINCO SGD</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Manual SINCO SGD</a> &raquo;</li>
+    
+      
+    
+    <li>5. Archivo</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><a name="arriba"></a>
+<a href="index.html">INICIO</a></p>
+<h2 id="archivo">ARCHIVO</h2>
+<hr />
+<p><a name="configuracionesPrevias"></a></p>
+<h3 id="configuraciones-previas">CONFIGURACIONES PREVIAS</h3>
+<p>Las siguientes opciones deben ser parametrizadas previamente a realizar la creación de expedientes, bajo las Tablas de retención documental.</p>
+<h4 id="estructura-de-codigo-de-barras">Estructura de código de barras</h4>
+<p>Cada uno de los expedientes de archivo debe contar número que los identifique para su posterior ubicación en las bodegas. Para generar este número, que irá acompañado de un código de barras, debe ser creado por medio de la opción SGD/Configuración/Código de barras/Estructura de código de barras:</p>
+<p><img alt="configuracionesPrevias1_arc" src="../imagenesArchivo/configuracionesPrevias1_arc.jpg" /></p>
+<p>Para su creación se abrirá el modal Tipo Estructura, donde se digita el nombre que se desea designar a la estructura, el cual lo identificará al momento de crear las tablas de retención documental. Tenga en cuenta que es posible eliminar un Tipo de Estructura creado, siempre y cuando éste no haya sido utilizado.</p>
+<p><img alt="configuracionesPrevias2_arc" src="../imagenesArchivo/configuracionesPrevias2_arc.jpg" /></p>
+<p>A su vez es posible que dentro de la estructura de código de barras sea referenciado también el código de la dependencia para que asi en el registro e identificación de los expedientes a los cuales dentro de la tabla de retención (dependencia) se le haya asignado este tipo de estructura se vea relejado la identificación dentro del código de barras.</p>
+<p><img alt="configuracionesPrevias3_arc" src="../imagenesArchivo/configuracionesPrevias3_arc.jpg" /></p>
+<p>Asignación a la TRD – DEPENDENCIA</p>
+<p><img alt="configuracionesPrevias4_arc" src="../imagenesArchivo/configuracionesPrevias4_arc.jpg" /></p>
+<p>Registro del expediente</p>
+<p><img alt="configuracionesPrevias5_arc" src="../imagenesArchivo/configuracionesPrevias5_arc.jpg" /></p>
+<h4 id="descriptores">Descriptores</h4>
+<p>Los descriptores son atributos adicionales que pueden ser asignados a tipologías y subseries. Estos funcionan como palabras claves al momento de la búsqueda dentro de los informes, dado que son campos que se le solicitarán en el registro de un expediente o documento para enriquecer las consultas. También generan un control y uniformidad de datos al momento de realizar los registros.</p>
+<p>En la ruta SGD/Configuración/DESCRIPTORES/Maestro de descriptores, podrá crear, editar y consultar descriptores; también podrá crear fuentes externas y categorías.</p>
+<p><img alt="descriptores1_arc" src="../imagenesArchivo/descriptores1_arc.jpg" /></p>
+<p>Al dar clic en el botón consultar, se mostrarán los descriptores que han sido creados hasta el momento.</p>
+<p><img alt="descriptores2_arc" src="../imagenesArchivo/descriptores2_arc.jpg" /></p>
+<p>Existen descriptores denotados como <strong>interno</strong>, los cuales han sido creados por las integraciones con otros módulos de SINCO ERP. </p>
+<p>La página Maestro de descriptores se comparte con el módulo SINCO SGC (sistema de gestión de calidad), por ello se observarán algunos descriptores en forma de pregunta; aunque no se cuente con este módulo o su correspondiente integración con SINCO SGD, éstos se conservarán siendo posible su utilización.</p>
+<p>Se podrán eliminar los descriptores que no sean de tipo interno, y su identificación. Proceda dando clic en la columna Eliminar, donde los descriptores marcados con el ícono <img alt="iconDescriptores1_arc" src="../imagenesArchivo/iconDescriptores1_arc.jpg" />  indican que han sido creados por el usuario y es posible eliminarlos, solamente si no existen registros asociados.</p>
+<p>Maestro de descriptores también es un informe que permite identificar todos los descriptores, así como las fuentes externas y categorías.</p>
+<h5 id="creacion-de-un-descriptor">Creación de un descriptor</h5>
+<p><img alt="creacionDescriptores1_arc" src="../imagenesArchivo/creacionDescriptores1_arc.jpg" /></p>
+<p>El campo <strong>descripción</strong> presentará los descriptores existentes, a la par que valida que no se realice la creación de uno con un nombre ya registrado. Debe ingresar una <strong>observación</strong>, puesto que validará lo que este descriptor hace.</p>
+<p>En <strong>origen</strong> trae precargado los módulos que están utilizando descriptores. Para este caso se selecciona el módulo SGD.</p>
+<p>En <strong>tipo de dato</strong>:     <br />
+<em> <strong>Fecha</strong>: abrirá un calendario para seleccionar una fecha.
+* <strong>Número</strong>: el sistema colocará los separadores de miles. 
+* <strong>Booleano</strong>: se visualizará una casilla para dar </em>check*.
+* <strong>Texto</strong>: permite crear datos alfanuméricos. 
+* <strong>Hora</strong>: carga los campos para asignar una hora.</p>
+<p><img alt="creacionDescriptores2_arc" src="../imagenesArchivo/creacionDescriptores2_arc.jpg" /></p>
+<p>Una vez creados los descriptores, podrán ser usados en la Tablas de Retención Documental. Para ello, debe seguir la ruta SGD/Retención documental/Política de retención documental. Allí deberá crear la dependencia, serie, subserie y tipología, de acuerdo a la tabla de retención documental. </p>
+<p><strong>Fuente Externa</strong></p>
+<p>Una fuente externa busca crear una lista desplegable de datos que se visualizarán al momento de crear el descriptor y ser asignado a la política, de este modo, al momento del registro se desplegarán las opciones que se hayan creado dentro de ésta.</p>
+<p>Se puede eliminar una fuente externa desde que no se haya utilizado en ningún descriptor o exista un registro relacionado.</p>
+<p><strong>Creación de una fuente externa</strong></p>
+<p><img alt="creacionDescriptores2_arc" src="../imagenesArchivo/creacionFuenteExterna_arc.jpg" /></p>
+<p>Para crear el contenido de una fuente se deberá seleccionar el símbolo <img alt="iconCreacionFuenteExterna1_arc" src="../imagenesArchivo/iconCreacionFuenteExterna1_arc.jpg" /> , y para que sean visibles los datos que contiene debe estar el <img alt="iconCreacionFuenteExterna2_arc" src="../imagenesArchivo/iconCreacionFuenteExterna2_arc.jpg" />
+  de activo. Si hay cambios sobre un dato no será posible eliminar una fuente, pero podrá desactivarla quitando el check de la casilla de verificación.
+Si desea editar el nombre de la fuente, lo podrá realizar haciendo clic en el icono del lápiz. Para agregar otro dato de la fuente externa, bastará con escribir en el campo en blanco y dar clic en el símbolo <img alt="iconCreacionFuenteExterna3_arc" src="../imagenesArchivo/iconCreacionFuenteExterna3_arc.jpg" /> .</p>
+<p><img alt="creacionFuenteExterna2_arc" src="../imagenesArchivo/creacionFuenteExterna2_arc.jpg" /></p>
+<p><strong>Rotulo</strong></p>
+<p>Este paso es requerido previo a la configuración del rótulo en la política de retención documental, a través de la ruta SGD/Configuración/CONFIGURACION DE RÓTULOS/Formatos. La parametrización del tamaño se debe realizar en milímetros, toda vez que esta información será visible en el sticker que se coloca en las unidades de conservación. </p>
+<p><strong>Formatos por línea</strong> hace referencia a la cantidad de rótulos de acuerdo al tipo de rollo a configurar (1 o 2 rótulos por línea).</p>
+<p><img alt="rotulo1_arc" src="../imagenesArchivo/rotulo1_arc.jpg" /></p>
+<p>Al guardar la configuración el nombre se convierte en un hipervínculo, que al dar clic sobre él habilitará una pantalla emergente, donde se configura la cantidad de campos y la ubicación que tendrán los datos dentro del sticker. </p>
+<p><img alt="rotulo2_arc" src="../imagenesArchivo/rotulo2_arc.jpg" /></p>
+<p>Las coordenadas X y Y, hacen referencia a la cantidad de líneas en el eje pertinente en la que iniciará la impresión de la línea de información.</p>
+<p><strong>Ver. C.B</strong>: al seleccionar el check, indicará que en dicha ubicación se colocará el código de barras. Cuando se tome esta opción es necesario indicar la altura y el ancho en milímetros del código de barras; el sistema bloqueará las filas siguientes.  </p>
+<p><strong>Ver texto</strong>: indica que se recuperará el título del campo o del descriptor. </p>
+<p><strong>Max. Líneas</strong>: número estimado de líneas que ocupará el texto en el rótulo. </p>
+<p>En el área de <strong>texto</strong> para alto y ancho se denota el tamaño de la fuente de la letra.</p>
+<p><strong>Bodegas</strong></p>
+<p>El concepto de bodegas hace referencia al espacio físico donde se archivarán los expedientes. Dentro del módulo SINCO SGD las bodegas hacen referencia a la ubicación de los expedientes que han sido registrados en el sistema, por ende, se deben configurar basados en la realidad existente de las estanterías, entrepaños, cajas o archivos móviles dispuestos a custodiar los expedientes de la compañía. </p>
+<p>Al dirigirse a la ruta SGD/Configuración/Bodegas, encontrará las bodegas creadas hasta el momento. De no reflejar ningún dato, indicará que éstas no han sido creadas aún.</p>
+<p><img alt="bodegas1_arc" src="../imagenesArchivo/bodegas1_arc.jpg" /></p>
+<p>Al seleccionar el botón crear bodega, se despliega una ficha para proceder a generar la acción.</p>
+<p><img alt="bodegas1_arc" src="../imagenesArchivo/bodegas2_arc.jpg" /></p>
+<p>Dentro del encabezado encontrará una indicación a considerar al momento de crear la bodega, toda vez que, al generarla se asocia directamente a una sucursal. Solo podrá seleccionar la sucursal dentro de las opciones que le han sido asignadas al perfil del usuario que realiza el registro.</p>
+<p>Tiempo de recuperación hace referencia al lapso que tiene el usuario que administra el archivo para entregar el expediente físico a la persona que realizó la solicitud.</p>
+<p>En las funcionalidades que contiene esta opción se cuenta con una restricción a los usuarios que administrarán las transacciones de los expedientes, de modo que se establecen individualmente los usuarios de SINCO ERP que tendrán acceso a cada bodega configurada. Lo anterior se realiza en el campo operario y se ira reflejando en la parte inferior del campo.</p>
+<p><strong>Nota</strong>: este campo hace una validación en el nombre del usuario a agregar como operario, por lo cual hará diferencia entre mayúsculas y minúsculas. Es decir, si la primera letra del nombre del usuario es mayúscula y el resto está escrito con minúsculas, así se debe buscar dentro del campo.</p>
+<p>La casilla de verificación Activo viene marcada por defecto, si requiere inactivar la bodega, bastará con dejar en blanco la casilla, sin el <em>check</em>.</p>
+<p>Completados los campos de sucursal, tiempo de recuperación y operarios, se procede a guardar. El sistema informará a través de un cuadro de diálogo si la acción se ha ejecutado correctamente. Para proceder a crear las ubicaciones, deberá hacer clic en el botón regresar. Esto lo remitirá a la pantalla principal, donde visualizará la bodega recientemente creada con sus correspondientes datos básicos.</p>
+<p>Haciendo clic sobre el icono <img alt="iconBodegas1_arc" src="../imagenesArchivo/iconBodegas1_arc.jpg" />
+  de la bodega, verá habilitada la funcionalidad de las ubicaciones. Adicionalmente este ícono le permitirá consultar las condiciones que conforman la bodega.</p>
+<p>En las ubicaciones, como se mencionó con anterioridad, podrá parametrizar el sistema de acuerdo a la distribución real de los estantes donde se conservará el archivo de la empresa.</p>
+<p>En la pantalla se encontrará el botón Agregar ubicación. Al hacer clic sobre él, se desplegará una ventana donde deberá ingresar la información. Si se marca la casilla de incrementa consecutivo, al crear nuevas ubicaciones de este mismo tipo, el sistema aumentará el número de acuerdo a la cantidad de veces que se duplique la ubicación.</p>
+<p><img alt="bodegas3_arc" src="../imagenesArchivo/bodegas3_arc.jpg" /></p>
+<p>Al agregar, cada ítem se visualizará en forma de cascada, uno debajo del otro.</p>
+<p><img alt="bodegas4_arc" src="../imagenesArchivo/bodegas4_arc.jpg" /></p>
+<p>Adicionalmente, se cuenta con la funcionalidad de duplicar la ubicación, lo que permite que el sistema cree un ítem con todo su contenido idéntico al anterior.</p>
+<p><img alt="bodegas5_arc" src="../imagenesArchivo/bodegas5_arc.jpg" /></p>
+<p><a href="#arriba">Ir arriba</a></p>
+<p><a name="politicaRD"></a></p>
+<h3 id="politica-de-retencion-documental">POLÍTICA DE RETENCIÓN DOCUMENTAL</h3>
+<p>Es el elemento principal para el creación, manejo y consulta de los documentos dentro del archivo de una compañía. Éste inicia con la definición ordenada y sistemática de una política de retención documental; en donde es vital que los documentos y la información se encuentren estructuradas a través de las Tablas de Retención Documental, en adelante mencionadas como TRD.</p>
+<p>El sistema permite configurar las TRD dentro de la opción Política de retención documental, a través de la siguiente jerarquía: dependencias, series, sub-series y tipologías.</p>
+<p>Dentro del módulo SINCO SGD, la ruta de esta opción es Retención documental /Política de retención documental.</p>
+<h4 id="creacion-jerarquica-de-las-trd">Creación jerárquica de las TRD</h4>
+<p>Dependencia hace referencia a las áreas de la compañía que generan documentos, según las características de cada empresa.</p>
+<p>Para crear una dependencia, bastará con hacer clic en el botón <img alt="politicaRD1_arc" src="../imagenesArchivo/politicaRD1_arc.jpg" />  el cual que abrirá una ventana modal donde se deben completar todos los campos. </p>
+<p><img alt="politicaRD2_arc" src="../imagenesArchivo/politicaRD2_arc.jpg" /></p>
+<p>Los siguientes campos aplican de la misma forma para dependencia, serie y tipología al momento de crearlas.</p>
+<p><strong>Código</strong>: en este campo se ingresará el código que ha sido asignado a la dependencia, serie y/o tipología dentro de su estructura orgánica. Este código podrá ser alfanumérico (números y letras).</p>
+<p><strong>Descripción</strong>: nombre de la dependencia, serie o tipología. Dependerá del proceso u organigrama al cual pertenecen. Dado que la estructura organizacional varía de empresa a empresa, podría suceder que refleje así: Recursos Humanos, Tesorería o que la dependencia sea Contabilidad, y dentro de ésta estaría tesorería, esta última correspondería a una serie.</p>
+<p><strong>Tipo de estructura Cód. Barras</strong>: obedece a la estructura que se ha definido para que identifique los expedientes de archivo y que será asignado al momento de su creación. Previamente ha sido creado en la opción <strong><em>estructura de código de barras</em></strong>.  Una vez asignada a la dependencia, las series y las subseries creadas para esta heredarán este tipo, por ende no es requerido que sea seleccionado en cada creación. </p>
+<p><strong>Orden</strong>: define la ubicación de cada una de las dependencias, series, subseries y/o tipologías por jerarquía. Se podrá asignar el consecutivo 1, 2, 3, o podrá también usar el mismo número asignado al código de la dependencia, si este fue de tipo número y si así se requiere el orden.</p>
+<p><strong>Activo</strong>: esta casilla de verificación siempre estará marcada, pues establece el estado Activo de la dependencia, serie, subserie y tipología; lo que permitirá crear expedientes sobre las subseries y tipología. Cuando no se marca quedará Inactiva, impidiendo el registro de expedientes y documentos en la misma.</p>
+<p>Cada vez que se cree una dependencia, serie, subserie y tipología aparecerá este informe.</p>
+<p>Al ser creada la dependencia, se debe continuar con la estructura de la TRD registrando la(s) serie(s), subserie(s) y Tipología(s).</p>
+<p>Para crear las siguientes categorías, serie, subserie y tipología deberá dirigirse al icono <img alt="iconPoliticaRD1_arc" src="../imagenesArchivo/iconPoliticaRD1_arc.jpg" />  del registro anterior, el cual abrirá un listado con las opciones:</p>
+<p><strong>Modificar</strong>: permitirá abrir nuevamente el modal para cambiar la información que registró.</p>
+<p><strong>Asignar rótulo</strong>: el sistema permite configurar la información que irá registrada en el rótulo de archivo por cada categoría de la TRD hasta subserie, si resulta necesario que haya información diferente por cada agrupación documental.</p>
+<p><strong>Eliminar</strong>: esta opción permite suprimir el ítem sobre el cual se está trabajando, siempre que no exista ningún tipo de registro en éste.</p>
+<p><strong>Agregar</strong>: servirá para crear el ítem hijo de donde se está trabajando</p>
+<p>En el único caso en el que cambiará el modal, es en el momento de registrar la subserie, toda vez que cuenta con los siguientes campos adicionales, ya que sobre estos se determina la información de su retención en archivo:</p>
+<p><strong>Medios de conservación</strong>: en esta opción se deben seleccionar los medios de conservación asignados a los documentos que conforman la subserie; es posible seleccionar uno o más de ellos, siempre teniendo en cuenta que tipos de documentos se conservarán y cumplirán el proceso archivístico.</p>
+<p><strong>Disposición final</strong>: es requisito seleccionar la disposición final de los documentos que conforman los expedientes, para el SGD definidos en la subserie. Es posible seleccionar más de opción dado que estos tiempos determinan el fin del ciclo vital de los documentos.</p>
+<p><strong>Meses de gestión</strong>: hace referencia al número total de meses en los que la subserie permanecerá en el archivo de gestión.</p>
+<p><strong>Meses de baja</strong>: corresponde al número total de meses en los que la subserie permanecerá en el archivo central antes de ser dado de baja o dar paso a archivo histórico.</p>
+<p><strong>Permite descripción duplicada</strong>: al activar esta opción se indica que, al momento de crear un expediente sobre esta subserie, podrá tener la misma descripción o título. Al no ser marcada cuando se realice la creación de un expediente, si llegase a duplicarse la descripción, el sistema alertará que ya existe un registro con esta información.</p>
+<p><strong>Subserie relacionada</strong>: esta opción permite relacionar dos subseries de cualquier dependencia para realizar el traslado de expedientes entre la relación, por ejemplo, cuando se realiza esta acción se heredarán las tipologías y descriptores creados en la otra subserie con la cual se relaciona, conservando el mismo código de barras.</p>
+<p><img alt="politicaRD3_arc" src="../imagenesArchivo/politicaRD3_arc.jpg" /></p>
+<p>Con la subserie creada, se le podrán asignar descriptores y/o tipologías, bastará con seleccionar uno de dichos ítems después de hacer clic en el botón <img alt="iconPoliticaRD1_arc" src="../imagenesArchivo/iconPoliticaRD1_arc.jpg" /> .</p>
+<p>Los descriptores se asignan con el fin enriquecer la consulta, dado que al momento de crear el expediente estos datos serán solicitados para ser registrados.</p>
+<p>Las tipologías corresponderán a los documentos individualizados, por ejemplo: promesa de compraventa o comprobantes de pago. Esta diferenciación tiene como fin la organización documental de acuerdo a las funciones de cada área y/o dependencia, los cuales también se han de anexar a los expedientes, brindando una mayor optimización al momento de consultar, contando con la posibilidad de buscar solo un tipo de documento específico, si así lo requiriese.</p>
+<h4 id="rotulo-por-empresa">Rótulo por empresa</h4>
+<p><img alt="politicaRD4_arc" src="../imagenesArchivo/politicaRD4_arc.jpg" /></p>
+<p>Continuando con la parametrización previa a crear expedientes, es importante configurar el rótulo por de archivo. Como se explicó anteriormente, este proceso se podrá realizar por dependencia, serie o subserie. En el caso de no haber datos especiales, se realiza la configuración del rótulo por empresa, esto con el fin de establecer qué información se recopilará en el sticker. Un ejemplo corresponde al modo en que el rótulo se visualiza en la imagen: la dependencia como contabilidad, la subserie tesorería, sumado al asunto (título o descripción del expediente) y el código de barras (número de identificación del expediente). </p>
+<p><img alt="politicaRD5_arc" src="../imagenesArchivo/politicaRD5_arc.jpg" /></p>
+<p>Finalizadas las configuraciones previas, la estructuración y generación de la política de retención documental, se podrá proceder con la creación de expedientes.</p>
+<p><a href="#arriba">Ir arriba</a></p>
+<h3 id="permisos-de-consulta-sobre-las-tablas-de-retencion">PERMISOS DE CONSULTA SOBRE LAS TABLAS DE RETENCIÓN</h3>
+<p><a name="permisosTablasRD"></a></p>
+<p>Desde la ruta SGD/Retención documental/Permisos de consulta, se podrán administrar los usuarios o perfiles que acceden a determinado segmento de la política documental, debido a que con el procedimiento que se explicará a continuación, se tendrá la posibilidad de habilitar una o varias dependencias de la TRD y, por ende, toda la información que ellas contienen (series, subseries y tipologías). Lo anterior tiene como fin mantener la confidencialidad de los documentos de cada una de las áreas de la compañía y permitirá visualizar solo lo que ha sido digitalizado por cada segmento.</p>
+<p>Para dar permisos sobre la política documental, bastará con seleccionar el usuario o el perfil al cual se desea otorgar los permisos, teniendo en cuenta las siguientes diferencias:</p>
+<p><strong>Perfil</strong>: hace referencia a los niveles de acceso al ERP que fueron asignados a un usuario por el administrador del sistema, de acuerdo a los cargos existentes. Es decir, solo se tendrán los permisos asignados y no podrán ser modificados desde esta opción en SINCO SGD. Sobre estos perfiles de usuario se podrán asignar permisos de consulta. Cuando se realiza la asignación a este nivel, implica que todos aquellos usuarios que tengan el perfil podrán tener acceso a los mismos documentos.</p>
+<p><strong>Usuario</strong>: el proceso de asignación de permisos es el mismo que para el de perfil con la diferencia de que, en este caso se podrá seleccionar el usuario al que serán asignados los permisos del listado de funcionarios creados en SINCO ERP. Esto garantiza una mayor seguridad y confidencialidad de la información. </p>
+<p><img alt="permisosConsultaTRD1_acr" src="../imagenesArchivo/permisosConsultaTRD1_acr.jpg" /></p>
+<p>Se podrá dar permisos sobre una o varias series, aplicado de igual forma para la(s) subserie(s), la(s) tipología(s) y dependencias.</p>
+<p><img alt="permisosConsultaTRD2_acr" src="../imagenesArchivo/permisosConsultaTRD2_acr.jpg" /></p>
+<p><strong>Nota</strong>: es importante tener en cuenta que no hay necesidad de asignar una dependencia, serie o subserie completa a un perfil para que consulte alguno de los documentos de un expediente, dado que esta opción permite asignar permisos sobre tipologías puntales, como se observa en la imagen.</p>
+<p>En el caso de usuario podrán ser asignados los permisos cargados al perfil, pero solo es posible si anteriormente han sido asignados permisos a éste. De lo contrario, no se realizará ninguna operación. Tenga en cuenta que al heredar reemplazará los permisos anteriores.</p>
+<p><a href="#arriba">Ir arriba</a></p>
+<h3 id="transacciones">TRANSACCIONES</h3>
+<p><a name="Transacciones"></a></p>
+<p>Las transacciones son gestiones que se aplican a los expedientes creados dentro del módulo SINCO SGD, se inician con su generación, pasando por la administración de los préstamos y por último a la baja o paso a histórico.</p>
+<h4 id="registro-de-expedientes">REGISTRO DE EXPEDIENTES</h4>
+<p>Dentro del módulo SINCO SGD, en la ruta SGD/Transacciones/ registro de archivos, se procederá a crear todas las unidades documentales (carpetas y documentos) de acuerdo a la TRD previamente establecida en la <strong>política de retención documental</strong>, y de acuerdo a los permisos definidos en la configuración. </p>
+<p>Esta opción también permite digitalizar los documentos y consultar los expedientes creados.</p>
+<p>Para registrar un expediente se debe tener claridad sobre la categoría de la <strong>política de retención documental</strong> a la que éste pertenece, dado que este campo es obligatorio. De acuerdo a la política seleccionada, se desplegarán los descriptores que hayan sido asociados a la subserie que se seleccione, en la parte superior derecha de la pantalla.</p>
+<p>Con el campo <strong>descripción</strong> se busca que el nombre dado al expediente sea el identificador principal, ya que se convertirá en un filtro de búsqueda para cada consulta; lo mismo sucederá con los campos de unidad de conservación (AZ, carpeta) y fecha inicial (fecha de producción del primer documento que conforma la carpeta).</p>
+<p><img alt="transacciones1_acr" src="../imagenesArchivo/transacciones1_acr.jpg" /></p>
+<p>Una vez se hayan completado todos los campos requeridos (resaltados con un asterisco rojo) y se dé clic en guardar el registro, el sistema automáticamente generará el <strong>código de barras</strong> (número que saldrá en el sticker).</p>
+<p>También, el campo <strong>código de barras</strong>, permite hacer la consulta de un expediente registrado previamente, digitando el número o parte de la descripción asignada al documento, toda vez que este campo tiene la funcionalidad de autocompletar y mostrará un listado de códigos que tengan algún tipo de coincidencia. </p>
+<p>En el caso de los campos no obligatorios, al ser completados en su registro, enriquecen la búsqueda del expediente a través de la opción consulta de archivos, como correspondería el realizar la ubicación del expediente desde su registro; dado que desde el inicio se encuentra enlazando la bodega donde se conservará el expediente, habilitando la opción de reserva y préstamos.</p>
+<p>La opción Guardar habilitará dentro de la página el área de registro de documentos, junto con el informe donde se enlistará cada uno de los que ha sido vinculado a través de las tipologías documentales que confirman la subserie, tal como se explicará dentro de este capítulo.</p>
+<p>Existen dos formas de ingresar documentos en el registro de expedientes: una de ellas es digitalizar la totalidad de los documentos en un solo archivo sobre la carpeta o descripción, o realizar el registro sobre las tipologías, una a una. A continuación se explicará cada una.</p>
+<p>Para adjuntar un archivo (conjunto de documentos en una sola imagen) sobre la carpeta se debe utilizar el botón de <strong>agregar documento</strong>, que se encuentra dentro de la opción registro de expedientes, que aparecerá en la página una vez el expediente haya sido guardado.</p>
+<p>Ver proceso de <strong><em>digitalización</em></strong>.</p>
+<p>Una vez digitalizado, el sistema habilita dos nuevos botones: el icono de <img alt="iconTransacciones1_acr" src="../imagenesArchivo/iconTransacciones1_acr.jpg" />  que corresponde al historial de imágenes, y activa también el visor de imágenes desde el botón de descargar archivo.</p>
+<p><img alt="transacciones2_acr" src="../imagenesArchivo/transacciones2_acr.jpg" /></p>
+<p>Dada la acción anterior, los documentos no se verán reflejados en el informe de tipologías, puesto que está dirigido a evidenciar la conservación documental a través de tipologías.</p>
+<p><img alt="transacciones3_acr" src="../imagenesArchivo/transacciones3_acr.jpg" /></p>
+<p>Digitalizar sobre la carpeta es la práctica menos recomendable, dado que no obtendrá la clasificación de la totalidad de los documentos que contiene la carpeta, disminuyendo notablemente las opciones de búsqueda en el informe de consulta general de archivos.</p>
+<p>La segunda opción es digitalizar mediante la tipología, esto permitirá consultar por cada tipo de documento enlazado que conforme la subserie, y se realiza sobre el área de registro de documentos. Puede ser ejecutado al seleccionar cada tipología y adjuntando el documento a través del botón agregar documento, que se habilita al momento de guardar la primera tipología.</p>
+<p><img alt="transacciones4_acr" src="../imagenesArchivo/transacciones4_acr.jpg" /></p>
+<h5 id="digitalizacion">DIGITALIZACIÓN</h5>
+<p>El siguiente modal es estándar dentro de SINCO SGD, para el caso de la digitalización de expedientes nace desde el botón agregar documento. Esta opción activa la carga de documentos, donde la condición de nuevo indica que no se ha guardado ningún documento con anterioridad, o se desea crear una nueva versión de un documento que ha sido cargado previamente; anexar hace referencia a que ya existe un documento anterior y sea desea adjuntar otro, el cual debe ser del mismo formato de archivo y quedará siempre al final de archivo inicial. Por último, reemplazar elimina el documento anterior y deja el que se cargue en ese momento, este último a diferencia de Nuevo no dejará un historial de las imágenes cargadas en SINCO SGD.</p>
+<p><img alt="digitalizacion1_acr" src="../imagenesArchivo/digitalizacion1_acr.jpg" /></p>
+<p>Examinar permite adjuntar un documento que esté previamente escaneado y almacenado en una ubicación del equipo de quien realiza el proceso.</p>
+<p>En cuanto a iniciar la acción de escanear, se podrá seleccionar la opción doble cara, para la cual deberá conservar el check en el recuadro pertinente, o simplemente desmarcar el campo para realizar el escaneo a una sola cara. En el campo Tipo podrá está parametrizado a blanco y negro, habiendo más opciones para escoger dentro de la lista  desplegable; por ejemplo, cuando un documento se considere ilegible, se sugiere escoger el tipo de escala de grises con una resolución adecuada para evitar un peso excesivo del archivo. </p>
+<p>La resolución hace referencia a la calidad de la imagen.</p>
+<p>Mediante las opciones digitalizar y mostrar interfaz podrá revisar en el visor de documentos cada una de las imágenes escaneadas, descartar la que no requiera con el botón <img alt="iconDigitalizacion1_acr" src="../imagenesArchivo/iconDigitalizacion1_acr.jpg" />
+, o verificar la calidad de la imagen con el icono <img alt="iconDigitalizacion2_acr" src="../imagenesArchivo/iconDigitalizacion2_acr.jpg" />
+ . </p>
+<p>Adicionalmente volverá a encontrar las funcionalidades de nuevo, anexar o reemplazar. Podrá seleccionar una de ellas, digitalizar nuevos documentos si algo quedó pendiente, luego deberá seleccionar las imágenes que desee adjuntar. </p>
+<p>Digitalizar y guardar está diseñado para realizar el escaneo de una forma más rápida, considerando que esta opción no abrirá la interfaz, por lo tanto, luego de finalizar la digitalización el sistema simplemente informará que el archivo ha sido registrado correctamente.</p>
+<p>Para las dos opciones anteriores de digitalización, cuando sean seleccionadas se activará un recuadro donde se deberá escoger el escáner pertinente con el cual se desea realizar la acción.</p>
+<p>Tenga en cuenta que solo se podrá borrar un registro de un documento si el expediente no ha sido enlazado a una ubicación (bodega).</p>
+<p><a name="transaccionesPrestamos"></a></p>
+<h4 id="transacciones-de-prestamos">TRANSACCIONES DE PRÉSTAMOS</h4>
+<h5 id="ubicacion-y-reubicacion-de-archivos">UBICACIÓN Y REUBICACIÓN DE ARCHIVOS</h5>
+<p>Para habilitar la administración de los préstamos de expedientes, cada de éstos debe contar con una ubicación dentro del sistema; esto quiere decir que, el expediente debe estar asociado a una bodega.</p>
+<p>La ubicación se puede realizar al momento de <strong>registrar los expedientes</strong>, o a través de la opción de ubicación y reubicación masiva de archivos. Cabe resaltar que, si el expediente no cuenta con una ubicación asignada dentro del sistema, las funcionalidades de préstamo no funcionarán.</p>
+<p>La opción de ubicación y reubicación masiva de archivos agrupa dos transacciones, permitiendo hacer movimientos masivos o individuales de los expedientes, bastará con seleccionar el expediente y la acción que desea ejecutar en el cabezote de la pantalla. Al seleccionar la opción de ubicar o reubicar, se activará un modal donde es indispensable seleccionar la sucursal o bodega, luego se requiere identificar la ubicación en esta bodega y dar clic en guardar. Cuando la acción sea correctamente registrada, el sistema lo informará a través de un mensaje resumiendo la transacción realizada.</p>
+<p>Teniendo en cuenta el estado del expediente, solo se habilitará la opción de ubicar o reubicar. </p>
+<p>Esta opción también funciona como un informe, a través de la cual se pueden generar consultas por algunos de los campos que se resumen en el botón <img alt="iconTransaccionesPrestamos1_acr" src="../imagenesArchivo/iconTransaccionesPrestamos1_acr.jpg" />.</p>
+<p><img alt="transaccionesPrestamos1_acr" src="../imagenesArchivo/transaccionesPrestamos1_acr.jpg" /></p>
+<h5 id="prestamo-de-expedientes">PRÉSTAMO DE EXPEDIENTES</h5>
+<p>La utilización óptima de SINCO SGD permite la consulta en línea de los documentos, ya que se cuenta con una copia digital de éstos. En los casos que se requiera solicitar el expediente al área de archivo se debe seguir el siguiente procedimiento.</p>
+<p>Una vez el expediente cuenta con una ubicación, se procederá con las gestiones de reserva y préstamo del mismo. Para tal fin deberá dirigirse a la ruta SGD/Consultas/Consulta general de archivos.</p>
+<p>El usuario que desee solicitar un expediente en préstamo desde la ruta mencionada, deberá buscar el expediente. Dentro de la información del informe, en la columna estado podrá encontrar la siguiente diferenciación:</p>
+<p><strong>Disponible</strong>: indica que el expediente ya cuenta con una ubicación dentro del sistema, y por ende se puede generar la reserva en la columna acción.</p>
+<p><strong>Prestado</strong>: indica que otro usuario tiene el expediente físico, y en la columna acción activa la función de solicitar a este usuario.</p>
+<p><strong>Baja</strong>: significa que el expediente físico ya ha sido eliminado, y por ende no se habilita ninguna funcionalidad dentro de la columna acción. Cabe resaltar que dentro del sistema se conserva la información digitaliza. </p>
+<p><strong>Preingreso</strong>: este estado muestra que el expediente aún no cuenta con una ubicación dentro del sistema (bodega), dado lo anterior no se activa ninguna funcionalidad dentro de la columna acción.</p>
+<p>Partiendo de lo anterior, se selecciona en la columna Acción la gestión de reserva, y ésta se confirma en el modal que se despliega. En algunos casos puede suceder que al realizar la acción de reserva, el sistema informe que el expediente ya se encuentra reservado, esto quiere decir que otro usuario ya ha solicitado con anterioridad el archivo, y está en proceso de ser aprobado por el usuario que administra el archivo. Por lo tanto, deberá esperar al préstamo y utilizar la opción solicitar a usuario y dirigirse a la categoría <strong><em>transacción de archivos entre usuarios</em></strong>.</p>
+<p><img alt="prestamosExpedientes1_acr" src="../imagenesArchivo/prestamosExpedientes1_acr.jpg" /></p>
+<p>Las notificaciones de acuerdo al evento de préstamo vienen predefinidas y han sido diseñadas desde la configuración de SINCO ERP, a través de la ruta: Configuración/Sistema/Notificaciones/Consulta de notificaciones origen SGD Archivo.</p>
+<p>Por lo tanto, en el momento que un usuario realiza la reserva del expediente, el usuario(s) que administra el archivo recibirá un correo electrónico informándolo del evento. </p>
+<p>El usuario responsable del archivo podrá aceptar o cancelar la reserva a través de la ruta SGD/transacciones/préstamo de archivos o SGD/Consulta/Consulta de reservas vigentes.</p>
+<p><img alt="prestamosExpedientes2_acr" src="../imagenesArchivo/prestamosExpedientes2_acr.jpg" /></p>
+<p>Al momento de aceptar el préstamo, se visualizará un modal donde se deberán digitar los datos de autenticación de SINCO ERP del usuario que solicita el préstamo, confirmando que recibió el expediente físico.</p>
+<p>Cabe anotar que si al realizar la consulta no se visualiza información, puede deberse a que el usuario no haya realizado adecuadamente la reserva.</p>
+<h5 id="renovacion-de-prestamos">RENOVACIÓN DE PRÉSTAMOS</h5>
+<p>Existen casos donde la revisión del expediente físico toma más del tiempo del proyectado, para este fin se cuenta con la opción de renovación, la cual se encuentra dentro de SINCO SGD, en el submódulo transacciones.</p>
+<p>La renovación de los expedientes deberá realizarse dentro de las fechas vigentes del préstamo, o al momento de realizar la devolución.</p>
+<p>Dentro del selector de código de barras se digita el número del expediente. El sistema validará que la información arrojando la información del expediente, y solamente deberá marcar el check en la columna renovar y hacer clic en botón del mismo nombre. </p>
+<p><img alt="renovacionExpedientes1_acr" src="../imagenesArchivo/renovacionExpedientes1_acr.jpg" /></p>
+<p>Con el fin de tener un mayor control sobre las renovaciones de los expedientes, esta opción funciona individualmente y permite la modificación de la fecha de devolución.</p>
+<h5 id="devolucion-de-archivos">DEVOLUCIÓN DE ARCHIVOS</h5>
+<p>Una vez el usuario finalice la revisión del expediente físico, lo debe retornar al área de archivo. Para el ingreso al sistema de esa devolución debe seleccionar la ruta SGD/Transacciones/Devolución de archivos.</p>
+<p>Con el fin de tener mayor control sobre las devoluciones de los expedientes, esta opción funciona individualmente. En el campo código de barras deberá digitar el número y ejecutar con el botón devolver, la acción queda culminada en el momento.</p>
+<p><img alt="devolucionArchivos1_acr" src="../imagenesArchivo/devolucionArchivos1_acr.jpg" /></p>
+<p>La devolución de expedientes se podrá realizar de manera masiva cuando requiera credenciales al devolverlo. </p>
+<p><img alt="devolucionArchivos2_acr" src="../imagenesArchivo/devolucionArchivos2_acr.jpg" /></p>
+<p><img alt="devolucionArchivos3_acr" src="../imagenesArchivo/devolucionArchivos3_acr.jpg" /></p>
+<p>Esta autenticación se realizara desde la página de configuraciones, (SGD/Configuración/Configuraciones) en la sección de archivo. La casilla de autenticación para préstamos de archivos, adicionalmente activara la devolución masiva de archivos si está encendida y si está apagada la devolución de los expedientes será individual.</p>
+<p>Cuando la casilla autenticación para préstamos esta desactivada, aparecerá en la devolución el botón devolver.</p>
+<p><img alt="devolucionArchivos4_acr" src="../imagenesArchivo/devolucionArchivos4_acr.jpg" /></p>
+<p>Cuando la casilla autenticación para préstamos está activa, aparecerá en la devolución el botón aceptar. Y asi se podrán registrar todos los expedientes para hacer la devolución masiva.</p>
+<p><img alt="devolucionArchivos5_acr" src="../imagenesArchivo/devolucionArchivos5_acr.jpg" /></p>
+<h5 id="transaccion-de-archivos-entre-usuarios">TRANSACCIÓN DE ARCHIVOS ENTRE USUARIOS</h5>
+<p>En algunos casos puede suceder que, al realizar la consulta del expediente a través de la opción de consulta general de archivos (SGD/Consultas), en la columna acción se visualice la categoría solicitar al usuario, en vez de la opción de reserva. Esto indica que el archivo físico ha sido entregado otro usuario. </p>
+<p>En ese caso no es necesario esperar a que el expediente sea devuelto al área de archivo, podrá hacer una previa solicitud haciendo clic en “solicitar al usuario”, esto activará un modal donde se informa la fecha desde que el usuario actual tiene el expediente físico. Para solicitarlo a éste se debe confirmar la acción requerida desde este modal.</p>
+<p><img alt="transaccionArchivos1_acr" src="../imagenesArchivo/transaccionArchivos1_acr.jpg" /></p>
+<p>Al usuario actual responsable del expediente se le notificará mediante un correo electrónico de la solicitud, y este deberá ingresar por la opción de transacción de archivos entre usuarios para aceptar o rechazarla.</p>
+<p><img alt="transaccionArchivos2_acr" src="../imagenesArchivo/transaccionArchivos2_acr.jpg" /></p>
+<p>El usuario actual podrá identificar las transacciones, puesto a que están agrupadas por el estado: solicitudes de préstamo entre usuarios, confirmación, recepción, archivos prestados y préstamos confirmados/rechazados.</p>
+<p>En esta misma opción y del mismo modo se aplica para el usuario final, quien encontrará agrupada la información por el estado. Cuando el usuario inicial ha aprobado la transferencia del expediente, al usuario final se le activará en la columna acción la funcionalidad para confirmar la recepción del expediente.</p>
+<p><img alt="transaccionArchivos3_acr" src="../imagenesArchivo/transaccionArchivos3_acr.jpg" /></p>
+<p>Al ejecutar la confirmación de recepción, se cambia el estado dentro de la opción, pasando de confirmación recepción archivos prestados a préstamos confirmados.</p>
+<h4 id="traslados">TRASLADOS</h4>
+<p><a name="Traslados"></a></p>
+<p>Las siguientes opciones deben ser de administración exclusiva del usuario responsable el área de archivo. </p>
+<h5 id="traslado-de-expedientes">TRASLADO DE EXPEDIENTES</h5>
+<p>La opción de traslado de expedientes se encuentra a través de la ruta SGD/transacciones/Traslado de expedientes, permitiendo, como su nombre lo indica, transferir expedientes entre subseries. Esto solo será posible si previamente se han relacionado las subseries por la opción de <strong>política de retención documental</strong>.</p>
+<p><img alt="trasladoExpediente1_acr" src="../imagenesArchivo/trasladoExpediente1_acr.jpg" /></p>
+<p>Una vez identificado el expediente, proceda a seleccionar, y continúe haciendo clic en el botón trasladar. Esta acción activará un modal donde deberá confirmar la selección. Cuando la transferencia del expediente ha sido correcta, el sistema lo informará a través de un cuadró de diálogo.</p>
+<p>En el caso en que el sistema informe que no ha podido realizar la acción, puede deberse a que las subseries no se encuentran relacionadas o las tipologías no son idénticas entre las subseries. </p>
+<h5 id="traslado-de-documentos">TRASLADO DE DOCUMENTOS</h5>
+<p>Esta opción permitirá el traslado de documentos que se hayan digitalizado en un expediente que no corresponde, teniendo en cuenta que el traslado se podrá efectuar si el expediente destino pertenece a la misma subserie del expediente origen.</p>
+<p>Para tal fin deberá dirigirse a SGD/ transacciones/traslado de documentos, donde realizará la consulta de los expedientes a intervenir, partiendo de la identificación del documento que transferirá. Se selecciona el check de trasladar, activando el modal donde seleccionará el expediente destino para el documento.</p>
+<p><img alt="trasladoDocumentos1_acr" src="../imagenesArchivo/trasladoDocumentos1_acr.jpg" /></p>
+<p>Al efectuar el traslado, se visualizará un modal que confirma la transacción realizada. El documento se visualizará dentro del expediente destino.</p>
+<p><a name="bajaArchivos"></a></p>
+<h4 id="baja-de-archivos">BAJA DE ARCHIVOS</h4>
+<p>Partiendo de la configuración realizada para cada subserie en la política documental, particularmente en el área de disposición final y meses de baja, el sistema permite “Dar de baja” a los archivos que han cumplido con el tiempo de retención, y con las condiciones de disposición asignadas. </p>
+<p>Dar de baja a un archivo implica que el mismo saldrá del archivo de gestión o central y sufrirá el proceso definido en la política documental (microfilmación, conservación total, digitalización o eliminación).</p>
+<p>Los archivos que han sido dados de baja no están disponibles para realizar ninguna transacción, como por ejemplo préstamo.</p>
+<h5 id="registro-de-bajas">REGISTRO DE BAJAS</h5>
+<p>Esta opción está dirigida a dar de baja individualmente cada expediente con toda la información que contienen, identificándolo por medio del código de barras. Para continuar con este proceso, el archivo debe estar en estado disponible, debe contar con una ubicación dentro del sistema y no estar en préstamo.</p>
+<p>Se debe tener en cuenta que solo se pueden dar de baja los archivos que ya han cumplido con su fecha de baja, basados en la configuración de la subserie en la política documental </p>
+<p>Al ingresar el código de barras de forma manual o por medio de un lector de códigos, el sistema muestra toda la información relacionada con el expediente, en la columna “Dar baja” se deberá marcar el check en la casilla para completar la transacción. </p>
+<p><img alt="registroBajas1_acr" src="../imagenesArchivo/registroBajas1_acr.jpg" /></p>
+<p>Para finalizar el proceso se debe hacer clic en el botón “Guardar”.</p>
+<h5 id="registro-de-baja-de-documentos">REGISTRO DE BAJA DE DOCUMENTOS</h5>
+<p>Esta opción permite dar de baja documentos, tanto individual como masivamente. Dentro de la configuración de la subserie, en la parametrización de disposición final, debe estar registrado como de selección – eliminación. Esto se da cuando los documentos a eliminar no cuentan con valor jurídico, histórico o cultural para la organización, es decir que, dentro de un expediente activo se podrán encontrar documentos disponibles para consulta en físico, y los documentos dados de baja solo se podrán consultar de forma digital.</p>
+<p>Se debe tener en cuenta que solo se pueden dar de baja documentos que han cumplido la fecha de baja en meses, configurada en la política documental.</p>
+<p>Para optimizar el proceso de búsqueda es aconsejable completar la gran mayoría de campos de búsqueda, toda vez que cuando no se realizan filtros, el sistema traerá todos los documentos que estén en estado disponible y que hayan cumplido el tiempo de retención.</p>
+<p><img alt="registroBajaDocumentos1_acr" src="../imagenesArchivo/registroBajaDocumentos1_acr.jpg" /></p>
+<p>Para dar de baja, bastará con seleccionar el recuadro   de un documento en particular.  Si selecciona el recuadro superior, este marcará todos los documentos. Haga clic en guardar para finalizar la transacción.</p>
+<p>Cuando la acción ha sido realizada de forma exitosa, al final de la fila aparecerá el símbolo de   como confirmación de la acción baja.</p>
+<h5 id="registro-de-bajas-masivas">REGISTRO DE BAJAS MASIVAS</h5>
+<p>Esta opción permite dar de baja expedientes de forma masiva, es decir, varios archivos que pertenezcan a una misma dependencia, serie o subserie.</p>
+<p>Se debe tener en cuenta que solo se pueden dar de baja archivos cuya fecha de baja configurada en la política documental ya se ha cumplido.</p>
+<p>Para consultar los archivos disponibles para dar de baja, se debe ingresar la información de la dependencia, serie o subserie y hacer clic en el botón consultar. Cuando se requiere una búsqueda más específica se podrán ingresar los datos de los demás filtros.</p>
+<p><img alt="registroBajaDocumentos2_acr" src="../imagenesArchivo/registroBajaDocumentos2_acr.jpg" /></p>
+<p>Al ingresar los datos, el sistema muestra todos los archivos disponibles y su respectiva información; en el extremo derecho muestra una columna con un recuadro <img alt="iconRegistroBajaDocumentos1_acr" src="../imagenesArchivo/iconRegistroBajaDocumentos1_acr.jpg" />, se debe marcar para seleccionar los expedientes que se van a dar de baja. </p>
+<p>Para finalizar la transacción deberá hacer clic en el botón guardar. Al finalizar el proceso, la información del expediente aparecerá en una fila en la parte inferior de la pantalla.</p>
+<p><a name="registroPasoHistorico"></a></p>
+<h5 id="registro-paso-historico">REGISTRO PASO HISTÓRICO</h5>
+<p>Esta opción está diseñada para los expedientes que en la disposición final se han dado de conservación total, ya que tienen valores culturales e históricos o constituirán la memoria de la empresa.</p>
+<p>Es relevante tener en cuenta lo dispuesto en las TRD, puesto que solo se podrá ejecutar el registro de paso histórico cuando los tiempos de retención en archivo de gestión y archivo central finalicen.</p>
+<p>La opción permite realizar el traslado de los expedientes a un archivo histórico, es decir una nueva ubicación física sin la eliminación de los documentos. De esta forma el archivo continuará en estado disponible para realizar transacciones, sin pertenecer al archivo de central.</p>
+<p>Para consultar los archivos disponibles para paso histórico, se debe ingresar la información de la dependencia, así al hacer clic en el botón consultar el sistema desplegará la información de los expedientes que han cumplido el tiempo en archivo central y están disponibles para pasar al histórico.</p>
+<p>Los campos de serie, subserie y ubicación no son obligatorios al momento de realizar la consulta, es decir, también podrá filtrar por la dependencia y realizar un traslado masivo o individual. Cuando requiera una búsqueda específica, se podrá ingresar más de un filtro. </p>
+<p>Bastará seleccionar la nueva ubicación en la columna respectiva, y hacer clic en guardar.</p>
+<h5 id="consulta-de-archivos-en-sinco-sgd">CONSULTA DE ARCHIVOS EN SINCO SGD</h5>
+<p><a name="consultaArchivosSGD"></a></p>
+<p>Desde la ruta: SGD/Consultas/Consulta general de archivos se podrán visualizar los <strong>expedientes</strong> que han sido creados desde el registro de archivos o  desde SINCO CBR. Este informe hace parte de los <strong>informes dinámicos</strong> de SINCO SGD.</p>
+<p>La consulta de expedientes y documentos se limitará a los permisos de consulta que han sido asignados al usuario sobre las TRD, así mismo, podrán variar las opciones de búsqueda para recuperar una carpeta o documento que ha sido digitalizado, a través del uso de filtros por descriptores.</p>
+<p><img alt="consultaArchivos1_acr" src="../imagenesArchivo/consultaArchivos1_acr.jpg" /></p>
+<p>Este informe permite encontrar varias opciones de filtro en el campo de búsqueda general, los cuales están identificados de acuerdo al tipo con una referencia en paréntesis: cuando tienen la letra (F) corresponden a campos que filtran información que han sido registrada previamente  desde SINCO SGD u otro módulo del ERP; (DESCR) corresponde puntualmente a un descriptor del sistema que puede ser o no de lista desplegable y (A), que hace referencia a un campo de texto abierto, donde al seleccionar el filtro e ingresar información el sistema buscará coincidencias y arrojará solo la información correspondiente.</p>
+<p>Es importante que cada vez que se seleccione un filtro se haga clic en la tecla enter del teclado, para que éste sea asignado como filtro de búsqueda. Adicionalmente, será posible agregar más de un filtro de búsqueda. Cuando se seleccione un filtro, la forma de identificar que ha quedado asignado es que éste se tornará de color azul y quedará ubicado en la parte izquierda del campo.</p>
+<p>Una vez haya seleccionado los filtros para iniciar la consulta, debe hacer clic en “Consultar”. Al finalizar, el sistema clasifica los expedientes bajo la unidad de conservación a la cual pertenecen y el código de barras; así mismo, identifica cada documento que contiene con el ícono <img alt="iconConsultaArchivos1_acr" src="../imagenesArchivo/iconConsultaArchivos1_acr.jpg" /> heredando su código.</p>
+<p><img alt="consultaArchivos2_acr" src="../imagenesArchivo/consultaArchivos2_acr.jpg" /></p>
+<p>Los documentos aparecerán resaltados en azul, con un hipervínculo que permite visualizar los archivos digitalizados a través de un visor propio. </p>
+<p><img alt="consultaArchivos3_acr" src="../imagenesArchivo/consultaArchivos3_acr.jpg" /></p>
+<p>Adicionalmente, en esta opción podrá imprimir el sticker de cada expediente. Con tan solo dar check en la fila correspondiente de la columna imprimir, procediendo a dar clic en el botón <img alt="iconConsultaArchivos2_acr" src="../imagenesArchivo/iconConsultaArchivos2_acr.jpg" /> . Si requiere puede seleccionar el botón , y luego el botón <img alt="iconConsultaArchivos3_acr" src="../imagenesArchivo/iconConsultaArchivos3_acr.jpg" /> , de esta forma podrá imprimirlos de forma masiva..</p>
+<p>El reloj <img alt="iconConsultaArchivos4_acr" src="../imagenesArchivo/iconConsultaArchivos4_acr.jpg" />  activa la ventana de historial de documentos, donde podrá evidenciar los cambios de imágenes, y detalles sobre la vigencia de la imagen. </p>
+<p><img alt="consultaArchivos4_acr" src="../imagenesArchivo/consultaArchivos4_acr.jpg" /></p>
+<p>El símbolo de admiración <img alt="iconConsultaArchivos5_acr" src="../imagenesArchivo/iconConsultaArchivos5_acr.jpg" /> corresponde a una auditoria de cambios de los descriptores.</p>
+<p><a href="#arriba">Ir arriba</a></p>
+<h3 id="informes-de-transacciones-de-archivo">INFORMES DE TRANSACCIONES DE ARCHIVO</h3>
+<p><a name="informesTransaccionesArchivoSGD"></a></p>
+<h4 id="movimientos-por-archivo">MOVIMIENTOS POR ARCHIVO</h4>
+<p><a name="movimientosArchivoSGD"></a></p>
+<p>Este informe permite visualizar todos los movimientos que ha tenido un expediente desde el momento de su ingreso a SINCO SGD. </p>
+<p>Se requiere digitar el código de barras y hacer clic en el botón buscar archivo. Dentro de la casilla de tipo de transacción podrá escoger si requiere una de las acciones que se ejecutan con un expediente.</p>
+<p><img alt="movimientosArchivo1_acr" src="../imagenesArchivo/movimientosArchivo1_acr.jpg" /></p>
+<p>Si no realiza la selección en tipo de transacción el sistema traerá todos los movimientos realizados para este expediente.</p>
+<p><img alt="movimientosArchivo2_acr" src="../imagenesArchivo/movimientosArchivo2_acr.jpg" /></p>
+<p>Adicionalmente, podrá visualizar los movimientos de los documentos que componen el expediente.</p>
+<p><img alt="movimientosArchivo3_acr" src="../imagenesArchivo/movimientosArchivo3_acr.jpg" /></p>
+<p>En el informe se visualiza el tipo de transacción y que usuario hizo el registro, la fecha, y un informe detallado de la transacción.</p>
+<p>La ruta de este informe es SGD/ Consultar/ transacciones/ movimientos por archivos</p>
+<h5 id="vencimiento-de-prestamos">VENCIMIENTO DE PRÉSTAMOS</h5>
+<p><a name="vencimientoPrestamosSGD"></a></p>
+<p>Este informe permite verificar los vencimientos de los expedientes de forma general. Está dirigido para el usuario que administra el archivo. La forma general de realizar la consulta es seleccionar del desplegable el símbolo que desea, por ejemplo, el símbolo mayor que (&gt;) hace referencia a los préstamos que vencerán en el futuro.</p>
+<p><img alt="vencimientoPrestamos1_acr" src="../imagenesArchivo/vencimientoPrestamos1_acr.jpg" /></p>
+<p>Si desea realizar una consulta específica, debe ingresar los datos de los campos que se visualizan en la pantalla, por ejemplo, realizar la búsqueda de los préstamos de un usuario en particular seguido al hacer clic en el botón consultar.</p>
+<p>La ruta de este informe es SGD/ Consultar/ transacciones/ vencimiento de préstamos</p>
+<h5 id="vencimiento-de-prestamos-propios">VENCIMIENTO DE PRÉSTAMOS PROPIOS</h5>
+<p><a name="vencimientoPrestamosPropiosSGD"></a></p>
+<p>El informe de vencimiento de préstamos propios está dirigido, como su nombre lo indica, a que cada usuario pueda verificar las fechas de devolución de los expedientes que ha solicitado.</p>
+<p>La principal diferencia con el informe general de vencimientos de préstamo radica en que, en este informe, la casilla de usuario está atada a la información que se ingresó a SINCO ERP, por lo tanto está bloqueada sin posibilidad de modificación.</p>
+<p>En este caso, al cambiar el signo a mayor que (&gt;) sumado al botón consultar, arroja la información para el usuario de capacitación. En este caso, la fecha de vencimiento del código de barras 00007 es 27/10/2017.</p>
+<p><img alt="vencimientoPrestamosPropios1_acr" src="../imagenesArchivo/vencimientoPrestamosPropios1_acr.jpg" /></p>
+<p>Tanto en el informe general como en el individual de vencimiento de préstamos, el signo menor que (&lt;) se encuentra como una opción predeterminada. Tenga en cuenta que, si no existen préstamos ya vencidos y el símbolo no se cambia, el sistema no arrojará ninguna información como en la imagen siguiente:</p>
+<p><img alt="vencimientoPrestamosPropios2_acr" src="../imagenesArchivo/vencimientoPrestamosPropios2_acr.jpg" /></p>
+<p>La ruta de este informe es SGD/ Consultar/ transacciones/ vencimiento de préstamos propios.</p>
+<h5 id="auditoria-de-movimientos">AUDITORÍA DE MOVIMIENTOS</h5>
+<p><a name="auditoriaMovimientosSGD"></a></p>
+<p>Este informe permite consultar de forma directa, es decir, al ingresar a la opción y hacer clic en el botón consultar, el sistema traerá todos los movimientos que se hayan realizado. Para optimizar la búsqueda se sugiere utilizar los filtros, por ejemplo, en la imagen se utilizó el código de barras, y se visualizan todas las transacciones que fueron realizadas.</p>
+<p><img alt="auditoriaMovimientos1_acr" src="../imagenesArchivo/auditoriaMovimientos1_acr.jpg" /></p>
+<p>La ruta de este informe es SGD/ Consultar/ transacciones/ auditoria de movimientos.</p>
+<p><a href="#arriba">Ir arriba</a></p>
+<h3 id="informes-dinamicos">INFORMES DINÁMICOS</h3>
+<p><a name="informesDinamicosSGD"></a></p>
+<h4 id="uso-de-filtros-dinamicos">USO DE FILTROS DINÁMICOS</h4>
+<p><a name="filtrosDinamicosSGD"></a></p>
+<p>El uso de filtros dinámicos permite realizar consultas bajo diferentes criterios de búsqueda, en las páginas de registro y consulta dentro de SINCO SGD. Todo esto, al digitar palabras claves en los campos seleccionados, las cuales deben hacer referencia a los datos principales de registro.</p>
+<p><img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/usoFiltrosDinamicos1_acr.jpg" /></p>
+<p>Podrá agregar uno o varios filtros de búsqueda dentro de la casilla. En el icono <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos1_acr.jpg" /> encontrarán los ítems de consulta que puede utilizar para cada informe. En cada informe varían los ítems de consulta.</p>
+<p>El icono de <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos2_acr.jpg" /> sirve para retomar la información cuando se han realizado cambios dentro de las <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos3_acr.jpg" />. Tenga en cuenta que, si agrega filtros sin hacer clic en el botón <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos4_acr.jpg" />  y selecciona la opción <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos2_acr.jpg" />   el sistema no traerá ninguna información, toda vez que se requiere la funcionalidad del botón consultar.</p>
+<p>En <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos3_acr.jpg" />  se encuentran varias funcionalidades:</p>
+<p>El icono <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos5_acr.jpg" /> permite desplazar de ubicación de la fila, bastará con hacer clic sostenido sobre la fila y moverla al orden deseado.</p>
+<p>El icono de <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos6_acr.jpg" />  permite tachar la fila, es decir que ese campo no verá dentro de las columnas del informe, <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos7_acr.jpg" />  . Para volver activar la columna simplemente vuelva a hacer clic sobre el icono   y el campo se verá sin este efecto <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos6_acr.jpg" />.</p>
+<p>Para exportar el informe a un archivo de Excel o PDF seleccione el icono de <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos8_acr.jpg" /> . Es importante utilizar este icono estando en la vista de <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos2_acr.jpg" />  , cuando ya se ha utilizado el botón <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos4_acr.jpg" /> . </p>
+<p>El botón <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos9_acr.jpg" />
+  cambiará la vista del informe a toda la pantalla, y el botón <img alt="usoFiltrosDinamicos1_acr" src="../imagenesArchivo/iconUsoFiltrosDinamicos9_acr.jpg" />
+  devolverá la vista a su tamaño natural.</p>
+<p>Estas funcionalidades las podrá encontrar en los siguientes informes.</p>
+<h4 id="consulta-de-prestamos">CONSULTA DE PRÉSTAMOS</h4>
+<p><a name="consultaPrestamosSGD"></a></p>
+<p>Este informe permite visualizar de forma general todos los expedientes están prestados, la fecha de vencimiento y devolución. </p>
+<p><img alt="consultaPrestamos1_acr" src="../imagenesArchivo/consultaPrestamos1_acr.jpg" /></p>
+<p>La ruta de este informe SGD/Consultas/ transacciones /Consulta de préstamos.</p>
+<h4 id="informe-de-consumo-de-imagenes-digitales">INFORME DE CONSUMO DE IMÁGENES DIGITALES</h4>
+<p><a name="informeConsumoImagenesDigitalesSGD"></a></p>
+<p>En SGD/Consultas/transacciones/Informe de consumo de imágenes digitales visualizará la cantidad de veces que una imagen ha sido consultada por usuario, junto a otros datos.</p>
+<p><img alt="informeConsumoImagenes1_acr" src="../imagenesArchivo/informeConsumoImagenes1_acr.jpg" /></p>
+<h4 id="consultas-de-transacciones-por-archivo">CONSULTAS DE TRANSACCIONES POR ARCHIVO</h4>
+<p><a name="consultaTransacionesArchivo_SGD"></a></p>
+<p>Como su nombre lo indica, este informe permite hacer seguimiento a las transacciones realizadas a los expedientes que se encuentran creados dentro del sistema.</p>
+<p><img alt="TransaccionesArchivo1_acr" src="../imagenesArchivo/TransaccionesArchivo1_acr.jpg" /></p>
+<p>La ruta de este informe es SGD/Consultas/transacciones/Consulta de transacciones por archivo.</p>
+<h4 id="digitalizacion-productividad">DIGITALIZACIÓN PRODUCTIVIDAD</h4>
+<p><a name="digitalizacionProductividad_SGD"></a></p>
+<p>Este informe resume la cantidad de imágenes digitalizadas por tipología, reportando fecha y hora de la actividad. También dentro de las opciones podrá agrupar por usuario.</p>
+<p><img alt="DigitalizacionProductividad1_acr.jpg" src="../imagenesArchivo/DigitalizacionProductividad1_acr.jpg" /></p>
+<p>La ruta de este informe SGD/Consultas/digitalización productiva.</p>
+<h4 id="inventario-bodega">INVENTARIO BODEGA</h4>
+<p><a name="inventarioBodega_SGD"></a></p>
+<p>Este informe tiene como fin apoyar a los usuarios que administran el archivo, para que partiendo de los filtros de búsqueda establecidos, puedan saber cuáles son los documentos que se han ingresado a una <strong>bodega</strong> específica.</p>
+<p><img alt="inventarioBodega1_acr" src="../imagenesArchivo/inventarioBodega1_acr.jpg" /></p>
+<p>La ruta de este informe SGD/Consultas/inventario bodegas.</p>
+<h4 id="permisos-consulta-politica-documental">PERMISOS CONSULTA POLÍTICA DOCUMENTAL</h4>
+<p><a name="permisosConsultaPd_SGD"></a></p>
+<p>Este informe le permitirá al administrador del archivo revisar de forma rápida los permisos asignados por usuario o por perfil.</p>
+<p><img alt="permisosConsultaPD1_acr" src="../imagenesArchivo/permisosConsultaPD1_acr.jpg" /></p>
+<p>La ruta de este informe SGD/Consultas/ permisos consulta política documental.</p>
+<h4 id="retencion-documental">RETENCIÓN DOCUMENTAL</h4>
+<p><a name="retencionDocumental_SGD"></a></p>
+<p>La opción de retención documental funciona para realizar consultas sobre la política que se ha establecido para el manejo del archivo.</p>
+<p>Al ingresar a la ruta SGD/Consultas/Retención documental, encontrará una casilla donde se debe seleccionar la dependencia que desea verificar. Con solo digitar guion bajo, el sistema mostrará todas las dependencias que hayan sido creadas hasta el momento.</p>
+<p><img alt="retencionDocumental1_acr" src="../imagenesArchivo/retencionDocumental1_acr.jpg" /></p>
+<p>Una vez ha hecho clic en el botón consultar, visualizará el resumen de la retención que se parametrizó para la dependencia seleccionada. La información puede ser exportada a un archivo Excel o generar la impresión.</p>
+<p><img alt="retencionDocumental2_acr" src="../imagenesArchivo/retencionDocumental2_acr.jpg" /></p>
+<p>Tenga presente que en esta opción no podrá editar la política de retención documental, solamente podrá consultarla.</p>
+<h4 id="consulta-de-reservas-vigentes">CONSULTA DE RESERVAS VIGENTES</h4>
+<p><a name="consultaReservasVigentes_SGD"></a></p>
+<p>Como su nombre lo indica, este informe permite visualizar las reservas vigentes por bodega. Dirigido para el usuario que administra el archivo, a través de éste podrá llevar control y seguimiento de todos los préstamos.</p>
+<p><img alt="consultaReservasVigentes1_acr" src="../imagenesArchivo/consultaReservasVigentes1_acr.jpg" /></p>
+<p>La ruta de este informe SGD/Consultas/ Consulta de reservas vigentes.</p>
+<p><a href="#arriba">Ir arriba</a></p>
+<h3 id="registro-de-expedientes-desde-sinco-cbr">REGISTRO DE EXPEDIENTES DESDE SINCO CBR</h3>
+<p><a name="registroExpedientes_SGD"></a></p>
+<p>Esta opción permite vincular los proyectos de venta en SINCO CBR a la tabla de retención documental de SINCO SGD. De esta forma, se crea la carpeta correspondiente a la venta de una agrupación, directamente desde SINCO CBR. Una vez sea transferida al archivo, es posible asignar los documentos digitalizados del nuevo cliente, evitando reprocesos en SINCO SGD.</p>
+<h4 id="asociacion-de-proyectos-a-subserie">ASOCIACIÓN DE PROYECTOS A SUBSERIE</h4>
+<p><a name="asociacionProyectosSubserie_SGD"></a></p>
+<p>Es indispensable realizar una configuración previa para garantizar la integración de <strong>SINCO CBR</strong> y <strong>SINCO SGD</strong>, que corresponde a la asociación de proyectos a subserie.</p>
+<p>Desde la Ruta: SGD/Retención documental/Asociación de proyectos a subseries.</p>
+<p><img alt="asociacionProyectosSubserie1_acr" src="../imagenesArchivo/asociacionProyectosSubserie1_acr.jpg" /></p>
+<p>Cuando se cree un nuevo proyecto en <strong>SINCO CBR</strong>, que se encuentre en proceso de ventas, debe ser informado lo antes posible al área de Gestión Documental, quienes realizarán la asociación con <strong>SINCO SGD</strong>, desde la opción en mención. En está, se seleccionará el proyecto y se asociará a la política de retención que el cliente tenga parametrizada como <strong>CARPETA CLIENTE</strong>, o aquella TRD que administrará las carpetas de clientes, la cual pertenecerá a la dependencia de Sala de Ventas. </p>
+<h4 id="registro-de-expedientes-de-negocios-desde-sinco-cbr">REGISTRO DE EXPEDIENTES DE NEGOCIOS DESDE SINCO CBR</h4>
+<p><a name="registroExpedientesNegocioesSINCOCBR_SGD"></a></p>
+<p>Tenga en cuenta que la creación de expedientes debe realizarse desde la sucursal en donde su consecutivo se encuentre también configurado, y no a la del proyecto por el cual se ingresa en <strong>SINCO CBR</strong>. </p>
+<p>Una vez ha sido creada la venta dentro SINCO CBR, se realiza la consulta desde la opción <strong>CBR/Ventas/Gestión Clientes</strong>; sin embargo, es necesario que el negocio este confirmado.</p>
+<p>Se selecciona la venta en la opción antes mencionada. Dentro de las opciones se encontrará el botón <img alt="iconRegistroExpedientesNegociosCBR1_acr" src="../imagenesArchivo/iconRegistroExpedientesNegociosCBR1_acr.jpg" /> . Al hacer clic en éste, se desplegará la consulta de archivos del módulo <strong>SINCO SGD</strong>. </p>
+<p><img alt="registroExpedientesNegociosCBR1_acr" src="../imagenesArchivo/registroExpedientesNegociosCBR1_acr.jpg" /></p>
+<p>Dentro del informe se encontrará el botón <img alt="iconRegistroExpedientesNegociosCBR2_acr" src="../imagenesArchivo/iconRegistroExpedientesNegociosCBR2_acr.jpg" />. Éste realizará la integración con <strong>SINCO SGD</strong> y registrará el negocio como un expediente en archivo, asignando un código de barras único que identificará el negocio (carpeta) en el archivo. </p>
+<p><img alt="registroExpedientesNegociosCBR2_acr" src="../imagenesArchivo/registroExpedientesNegociosCBR2_acr.jpg" /></p>
+<p>La carpeta como descripción o título integra los datos:</p>
+<ul>
+<li>La cédula y nombre del comprador principal de SINCO CBR.</li>
+<li>El código del proyecto y la agrupación de venta.</li>
+</ul>
+<p>Así mismo, vinculará de forma automática un campo de descriptores que permitirá desde SINCO SGD recuperar con mayor eficiencia el expediente. </p>
+<p>Una vez se realiza este proceso, el negocio debe ser identificado con el código que asigna el sistema, para ser enviado al archivo en la oficina principal. Allí se realizará el proceso de digitalización por documento sobre el código de referencia, es decir, bajo ese código se encontrarán de forma independiente cada uno de los documentos que conforman el negocio. </p>
+<p><img alt="registroExpedientesNegociosCBR3_acr" src="../imagenesArchivo/registroExpedientesNegociosCBR3_acr.jpg" /></p>
+<p>Esto facilitará la consulta del negocio, logrando así ubicar un documento en específico que se requiera. </p>
+<p><strong>Nota</strong>: Si no se cuenta con el add on 029, cuando se dé el caso de un desistimiento en <strong>SINCO CBR</strong>, éste debe ser informado a Gestión Documental, desde donde se realizará el traslado del negocio a una subserie <strong><em>Desistimientos</em></strong>, desde la opción <strong>SGD/Transacciones/Traslado de expedientes</strong>. Esto con el propósito de no perder la trazabilidad del negocio desistido, pues la carpeta y sus documentos siempre quedarán vinculados a la agrupación de venta.  </p>
+<p>Cuando se realice la nueva venta y se confirme desde <strong>SINCO CBR</strong>, se debe llevar a cabo el mismo proceso de registro descrito en este numeral, donde el sistema creará el nuevo expediente con un nuevo código para el comprador final, dejando el desistido en una segunda subdivisión, pero con sus documentos aún consultables. </p>
+<p>En cuanto a la consulta de los expedientes para el usuario que administra el archivo, podrá realizar la actividad a través de la opción de <strong>consulta general de archivos</strong>, recuerde que debe revisar los permisos pertinentes sobre la TRD.</p>
+<h4 id="permisos-de-consulta-sobre-las-tablas-de-retencion-desde-cbr">PERMISOS DE CONSULTA SOBRE LAS TABLAS DE RETENCION DESDE CBR</h4>
+<p><a name="permisosConsultaTablasRD_SGD"></a></p>
+<p>Si por alguna razón, el gestor de clientes realiza la creación del expediente de todo el proceso descrito desde el módulo SINCO CBR, y el sistema confirma que el expediente fue correctamente creado, pero no puede ver o consultar la carpeta desde la Gestión clientes de SINCO CBR, es posible que no tenga permisos de consulta sobre los documentos. En este evento, es necesario solicitar la asignación de permisos a Gestión Documental quienes realizarán el proceso. Una vez se les informe, podrán hacer clic en el ícono actualizar <img alt="iconPermisosConsultaTDdesdeCBR1_acr" src="../imagenesArchivo/iconPermisosConsultaTDdesdeCBR1_acr.jpg" /> del informe y se habilitará la consulta del expediente y documentos.</p>
+<p>Es importante tener en cuenta que si no puede acceder al expediente, ésta podría ser la razón; por tanto, no se debe hacer clic más de una vez en el botón <img alt="iconPermisosConsultaTDdesdeCBR2_acr" src="../imagenesArchivo/iconPermisosConsultaTDdesdeCBR2_acr.jpg" /> . Sin embargo, si se realiza esta acción, el sistema notificará que el expediente ya ha sido creado. </p>
+<p><img alt="permisosConsultaTDdesdeCBR1_acr" src="../imagenesArchivo/permisosConsultaTDdesdeCBR1_acr.jpg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+
+            
+            <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+              
+              
+              <a href="4.CorrespondenciaSaliente.html" class="btn btn-neutral" title="4. Correspondencia Saliente"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+              
+            </div>
+            
+            
+            <hr/>
+            
+            <div role="contentinfo">
+              <!-- Copyright etc -->
+              
+            </div>
+            <div>
+
+              <p><img class="logoSGD" src="../imagenesSGD/logoSGD.jpg" /></p>
+
+            </div>
+            
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="4.CorrespondenciaSaliente.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="./js/theme.js" defer></script>
+      <script src="./search/main.js" defer></script>
+
+</body>
+</html>
